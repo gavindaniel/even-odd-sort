@@ -1,8 +1,0 @@
-**************** Test 3 ****************
-
-Size of array:  100
-
-Time to complete -> 59246 nanoseconds (ns)
-Time to complete -> 0.059246 milliseconds (ms)
-Time to complete -> 5.9246E-5 seconds (s)
-

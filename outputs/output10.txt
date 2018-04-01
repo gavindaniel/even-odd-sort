@@ -1,8 +1,0 @@
-**************** Test 10 ****************
-
-Size of array:  25000
-
-Time to complete -> 37256616 nanoseconds (ns)
-Time to complete -> 37.256616 milliseconds (ms)
-Time to complete -> 0.037256616 seconds (s)
-

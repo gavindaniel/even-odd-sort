@@ -1,8 +1,0 @@
-**************** Test 7 ****************
-
-Size of array:  2500
-
-Time to complete -> 861 nanoseconds (ns)
-Time to complete -> 8.61E-4 milliseconds (ms)
-Time to complete -> 8.61E-7 seconds (s)
-

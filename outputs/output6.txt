@@ -1,8 +1,0 @@
-**************** Test 6 ****************
-
-Size of array:  1000
-
-Time to complete -> 68752 nanoseconds (ns)
-Time to complete -> 0.068752 milliseconds (ms)
-Time to complete -> 6.8752E-5 seconds (s)
-
