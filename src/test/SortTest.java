@@ -8,11 +8,13 @@ import java.util.Arrays;
 import org.junit.Test;
 
 import controller.Main;
+import model.SortResults;
 
 public class SortTest {
 
 	final static String output_path = "outputs/";
 	
+	// Array sizes
 	int size1 = 6;
 	int size2 = 50;
 	int size3 = 100;
@@ -65,12 +67,16 @@ public class SortTest {
 	@Test
 	public void test1() {
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array1_after);
+		SortResults results = new SortResults();
+		results = Main.main(array1_before, array1_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -80,9 +86,17 @@ public class SortTest {
 			output.println("Size of array:  " + size1);
 //			output.println("Array (before) -> " + Arrays.toString(array1_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array1_before));
 			output.close();
@@ -106,12 +120,16 @@ public class SortTest {
 			array2_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array2_after);
+		SortResults results = new SortResults();
+		results = Main.main(array2_before, array2_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -121,9 +139,17 @@ public class SortTest {
 			output.println("Size of array:  " + size2);
 //			output.println("Array (before) -> " + Arrays.toString(array2_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array2_after));
 			output.close();
@@ -147,12 +173,16 @@ public class SortTest {
 			array3_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array3_after);
+		SortResults results = new SortResults();
+		results = Main.main(array3_before, array3_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -162,9 +192,17 @@ public class SortTest {
 			output.println("Size of array:  " + size3);
 //			output.println("Array (before) -> " + Arrays.toString(array3_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array3_after));
 			output.close();
@@ -188,12 +226,16 @@ public class SortTest {
 			array4_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array4_after);
+		SortResults results = new SortResults();
+		results = Main.main(array4_before, array4_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -203,9 +245,17 @@ public class SortTest {
 			output.println("Size of array:  " + size4);
 //			output.println("Array (before) -> " + Arrays.toString(array4_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array4_after));
 			output.close();
@@ -229,12 +279,16 @@ public class SortTest {
 			array5_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array5_after);
+		SortResults results = new SortResults();
+		results = Main.main(array5_before, array5_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -244,9 +298,17 @@ public class SortTest {
 			output.println("Size of array:  " + size5);
 //			output.println("Array (before) -> " + Arrays.toString(array5_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array5_after));
 			output.close();
@@ -270,12 +332,16 @@ public class SortTest {
 			array6_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array6_after);
+		SortResults results = new SortResults();
+		results = Main.main(array6_before, array6_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -285,9 +351,17 @@ public class SortTest {
 			output.println("Size of array:  " + size6);
 //			output.println("Array (before) -> " + Arrays.toString(array6_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array6_after));
 			output.close();
@@ -311,12 +385,16 @@ public class SortTest {
 			array7_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array2_after);
+		SortResults results = new SortResults();
+		results = Main.main(array7_before, array7_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -326,9 +404,17 @@ public class SortTest {
 			output.println("Size of array:  " + size7);
 //			output.println("Array (before) -> " + Arrays.toString(array7_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array7_after));
 			output.close();
@@ -352,12 +438,16 @@ public class SortTest {
 			array8_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array8_after);
+		SortResults results = new SortResults();
+		results = Main.main(array8_before, array8_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -367,9 +457,17 @@ public class SortTest {
 			output.println("Size of array:  " + size8);
 //			output.println("Array (before) -> " + Arrays.toString(array8_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array8_after));
 			output.close();
@@ -393,12 +491,16 @@ public class SortTest {
 			array9_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array9_after);
+		SortResults results = new SortResults();
+		results = Main.main(array9_before, array9_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -408,9 +510,17 @@ public class SortTest {
 			output.println("Size of array:  " + size9);
 //			output.println("Array (before) -> " + Arrays.toString(array9_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array9_after));
 			output.close();
@@ -434,12 +544,16 @@ public class SortTest {
 			array10_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array10_after);
+		SortResults results = new SortResults();
+		results = Main.main(array10_before, array10_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -449,9 +563,17 @@ public class SortTest {
 			output.println("Size of array:  " + size10);
 //			output.println("Array (before) -> " + Arrays.toString(array10_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array10_after));
 			output.close();
@@ -475,12 +597,16 @@ public class SortTest {
 			array11_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array11_after);
+		SortResults results = new SortResults();
+		results = Main.main(array11_before, array11_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -490,9 +616,17 @@ public class SortTest {
 			output.println("Size of array:  " + size11);
 //			output.println("Array (before) -> " + Arrays.toString(array11_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array11_after));
 			output.close();
@@ -516,12 +650,16 @@ public class SortTest {
 			array12_after[i] = random;
 		}
 		
-		long duration_nano = 0;
-		duration_nano = Main.main(array12_after);
+		SortResults results = new SortResults();
+		results = Main.main(array12_before, array12_after);
 		
 		// run time calculations
-		double duration_milli = duration_nano / 1000000.0;
-		double duration = duration_nano / 1000000000.0;
+		long duration_nano_eo = results.getEvenOddDuration();
+		double duration_milli_eo = duration_nano_eo / 1000000.0;
+		double duration_eo = duration_nano_eo / 1000000000.0;
+		long duration_nano_merge = results.getMergeDuration();
+		double duration_milli_merge = duration_nano_merge / 1000000.0;
+		double duration_merge = duration_nano_merge / 1000000000.0;
 		
 		// Print statements
 		try {
@@ -531,9 +669,17 @@ public class SortTest {
 			output.println("Size of array:  " + size12);
 //			output.println("Array (before) -> " + Arrays.toString(array12_before));
 			output.println();
-			output.println("Time to complete -> " + duration_nano + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration + " seconds (s)");
+			output.println("**** Even Odd Sort ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			output.println();
+			output.println("**** Increasing Order Sort (merge sort) ****");
+			output.println();
+			output.println("Time to complete -> " + duration_nano_merge + " nanoseconds (ns)");
+			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
+			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
 //			output.println("Array (after)  -> " + Arrays.toString(array12_after));
 			output.close();
