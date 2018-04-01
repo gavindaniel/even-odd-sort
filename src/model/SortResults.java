@@ -10,8 +10,8 @@ public class SortResults {
 		merge_duration = 0;
 	}
 	
-	public long getEvenOddDuration() {	return even_odd_duration;	}
-	public void setEvenOddDuration(long d) {	even_odd_duration = d;	}
+	public long getInsertDuration() {	return even_odd_duration;	}
+	public void setInsertDuration(long d) {	even_odd_duration = d;	}
 	public long getMergeDuration()	{	return merge_duration;	}
 	public void setMergeDuration(long d) {	merge_duration = d;	}
 }

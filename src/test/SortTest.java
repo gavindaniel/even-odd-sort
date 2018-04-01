@@ -71,7 +71,7 @@ public class SortTest {
 		results = Main.main(array1_before, array1_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -128,7 +128,7 @@ public class SortTest {
 		results = Main.main(array2_before, array2_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -185,7 +185,7 @@ public class SortTest {
 		results = Main.main(array3_before, array3_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -242,7 +242,7 @@ public class SortTest {
 		results = Main.main(array4_before, array4_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -298,7 +298,7 @@ public class SortTest {
 		results = Main.main(array5_before, array5_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -354,7 +354,7 @@ public class SortTest {
 		results = Main.main(array6_before, array6_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -410,7 +410,7 @@ public class SortTest {
 		results = Main.main(array7_before, array7_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -466,7 +466,7 @@ public class SortTest {
 		results = Main.main(array8_before, array8_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -522,7 +522,7 @@ public class SortTest {
 		results = Main.main(array9_before, array9_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -578,7 +578,7 @@ public class SortTest {
 		results = Main.main(array10_before, array10_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -634,7 +634,7 @@ public class SortTest {
 		results = Main.main(array11_before, array11_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();
@@ -690,7 +690,7 @@ public class SortTest {
 		results = Main.main(array12_before, array12_after);
 		
 		// run time calculations
-		long duration_nano_eo = results.getEvenOddDuration();
+		long duration_nano_eo = results.getInsertDuration();
 		double duration_milli_eo = duration_nano_eo / 1000000.0;
 		double duration_eo = duration_nano_eo / 1000000000.0;
 		long duration_nano_merge = results.getMergeDuration();

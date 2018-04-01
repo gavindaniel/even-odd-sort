@@ -21,11 +21,6 @@ public void sort(int[] array) {
 			index++;
 		}
 		
-//		System.out.println("Mid Point -> " + midPoint);
-//		System.out.println("First Half -> " + Arrays.toString(leftHalf));
-//		System.out.println("Second Half -> " + Arrays.toString(rightHalf));
-//		System.out.println("**********************");
-		
 		sort(leftHalf);
 		sort(rightHalf);
 		merge(leftHalf, rightHalf, array);
