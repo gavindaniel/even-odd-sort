@@ -84,13 +84,17 @@ public class SortTest {
 			output.println("**************** Test 1 ****************");
 			output.println();
 			output.println("Size of array:  " + size1);
-//			output.println("Array (before) -> " + Arrays.toString(array1_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
+			output.println();
+			output.println("Array (after) -> " + Arrays.toString(array1_before));
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -98,7 +102,7 @@ public class SortTest {
 			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
 			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
-//			output.println("Array (after)  -> " + Arrays.toString(array1_before));
+			output.println("Array (after)  -> " + Arrays.toString(array1_after));
 			output.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -137,13 +141,17 @@ public class SortTest {
 			output.println("**************** Test 2 ****************");
 			output.println();
 			output.println("Size of array:  " + size2);
-//			output.println("Array (before) -> " + Arrays.toString(array2_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
+			output.println();
+			output.println("Array (after) -> " + Arrays.toString(array2_before));
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -151,7 +159,7 @@ public class SortTest {
 			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
 			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
-//			output.println("Array (after)  -> " + Arrays.toString(array2_after));
+			output.println("Array (after)  -> " + Arrays.toString(array2_after));
 			output.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -190,13 +198,17 @@ public class SortTest {
 			output.println("**************** Test 3 ****************");
 			output.println();
 			output.println("Size of array:  " + size3);
-//			output.println("Array (before) -> " + Arrays.toString(array3_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
+			output.println();
+			output.println("Array (after) -> " + Arrays.toString(array3_before));
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -204,7 +216,7 @@ public class SortTest {
 			output.println("Time to complete -> " + duration_milli_merge + " milliseconds (ms)");
 			output.println("Time to complete -> " + duration_merge + " seconds (s)");
 			output.println();
-//			output.println("Array (after)  -> " + Arrays.toString(array3_after));
+			output.println("Array (after)  -> " + Arrays.toString(array3_after));
 			output.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -245,11 +257,14 @@ public class SortTest {
 			output.println("Size of array:  " + size4);
 //			output.println("Array (before) -> " + Arrays.toString(array4_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -298,11 +313,14 @@ public class SortTest {
 			output.println("Size of array:  " + size5);
 //			output.println("Array (before) -> " + Arrays.toString(array5_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -351,11 +369,14 @@ public class SortTest {
 			output.println("Size of array:  " + size6);
 //			output.println("Array (before) -> " + Arrays.toString(array6_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -404,11 +425,14 @@ public class SortTest {
 			output.println("Size of array:  " + size7);
 //			output.println("Array (before) -> " + Arrays.toString(array7_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -457,11 +481,14 @@ public class SortTest {
 			output.println("Size of array:  " + size8);
 //			output.println("Array (before) -> " + Arrays.toString(array8_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -510,11 +537,14 @@ public class SortTest {
 			output.println("Size of array:  " + size9);
 //			output.println("Array (before) -> " + Arrays.toString(array9_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -563,11 +593,14 @@ public class SortTest {
 			output.println("Size of array:  " + size10);
 //			output.println("Array (before) -> " + Arrays.toString(array10_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -616,11 +649,14 @@ public class SortTest {
 			output.println("Size of array:  " + size11);
 //			output.println("Array (before) -> " + Arrays.toString(array11_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
@@ -669,11 +705,14 @@ public class SortTest {
 			output.println("Size of array:  " + size12);
 //			output.println("Array (before) -> " + Arrays.toString(array12_before));
 			output.println();
-			output.println("**** Even Odd Sort ****");
+			output.println("**** Even Odd Sort (insertion sort) ****");
 			output.println();
-			output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
-			output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
-			output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			if (duration_nano_eo != -1) {
+				output.println("Time to complete -> " + duration_nano_eo + " nanoseconds (ns)");
+				output.println("Time to complete -> " + duration_milli_eo + " milliseconds (ms)");
+				output.println("Time to complete -> " + duration_eo + " seconds (s)");
+			} else 
+				output.println("Time to complete -> Stack Overflow! :(");
 			output.println();
 			output.println("**** Increasing Order Sort (merge sort) ****");
 			output.println();
