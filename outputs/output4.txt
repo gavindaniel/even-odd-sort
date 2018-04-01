@@ -1,0 +1,8 @@
+**************** Test 4 ****************
+
+Size of array:  250
+
+Time to complete -> 23679 nanoseconds (ns)
+Time to complete -> 0.023679 milliseconds (ms)
+Time to complete -> 2.3679E-5 seconds (s)
+

@@ -1,0 +1,8 @@
+**************** Test 12 ****************
+
+Size of array:  100000
+
+Time to complete -> 402979214 nanoseconds (ns)
+Time to complete -> 402.979214 milliseconds (ms)
+Time to complete -> 0.402979214 seconds (s)
+
